@@ -14,15 +14,15 @@ export const fetchAnime = async (page: number) => {
   ))
 }
 
-export const fetchGenres = async () => {
-  const genres = await fetch(`https://shikimori.one/api/genres`).then((res) =>
-    res.json()
-  )
-  return genres.map((genre: GenresListProps, index: number) => (
-    <div className="pt-2">
-      <p className="px-3 py-2" key={index}>
-        {genre.name}
-      </p>
-    </div>
-  ))
-}
+// export const fetchGenres = async () => {
+//   const genres = await fetch(`https://shikimori.one/api/genres`).then((res) =>
+//     res.json()
+//   )
+//   return genres.map((genre: GenresListProps, index: number) => (
+//     <div className="pt-2">
+//       <p className="px-3 py-2" key={index}>
+//         {genre.name}
+//       </p>
+//     </div>
+//   ))
+// }
