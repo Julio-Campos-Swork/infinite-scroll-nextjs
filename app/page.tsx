@@ -1,5 +1,5 @@
 import LoadMore from '../components/LoadMore'
-import { fetchAnime, fetchGenres } from './action'
+import { fetchAnime } from './action'
 import { NavBar } from '@/components/NavBar'
 async function Home() {
   const data = await fetchAnime(1)
