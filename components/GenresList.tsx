@@ -1,5 +1,5 @@
 'use client'
-import { fetchGenres } from '@/app/action'
+// import { fetchGenres } from '@/app/action'
 import { useEffect, useState } from 'react'
 
 export interface GenresListProps {
@@ -13,11 +13,11 @@ export type AnimeGenres = JSX.Element
 export const GenresList = () => {
   const [data, setData] = useState<AnimeGenres[]>([])
 
-  useEffect(() => {
-    fetchGenres().then((res) => {
-      setData(res)
-    })
-  }, [])
+  // useEffect(() => {
+  //   fetchGenres().then((res) => {
+  //     setData(res)
+  //   })
+  // }, [])
   return (
     <>
       <div className="absolute z-50 bg-black/80">{data}</div>
